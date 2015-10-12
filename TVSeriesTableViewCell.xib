@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TvSeriesCell" rowHeight="95" id="KGk-i7-Jjw" customClass="TVSeriesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N98-Hg-oBE">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="94.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="4fW-sl-jcA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmw-yO-g7G">
+                        <rect key="frame" x="77" y="39" width="346" height="18"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvy-5o-68d">
+                        <rect key="frame" x="423" y="27.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Fc7-J0-bpa"/>
+                            <constraint firstAttribute="height" constant="40" id="f9N-y3-dpd"/>
+                        </constraints>
+                        <state key="normal" image="Add">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.039215686270000001" green="0.27058823529999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fmw-yO-g7G" secondAttribute="trailing" constant="50" id="2kr-JO-g1r"/>
+                    <constraint firstItem="N98-Hg-oBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4xZ-P3-xr5"/>
+                    <constraint firstItem="Fmw-yO-g7G" firstAttribute="leading" secondItem="N98-Hg-oBE" secondAttribute="trailing" constant="2" id="9Hv-KN-Mph"/>
+                    <constraint firstItem="N98-Hg-oBE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fgv-JQ-u7K"/>
+                    <constraint firstAttribute="centerY" secondItem="Kvy-5o-68d" secondAttribute="centerY" id="LvL-FS-BMl"/>
+                    <constraint firstAttribute="trailing" secondItem="Kvy-5o-68d" secondAttribute="trailing" constant="10" id="X34-e6-JUR"/>
+                    <constraint firstAttribute="centerY" secondItem="Fmw-yO-g7G" secondAttribute="centerY" id="hWA-vr-zjS"/>
+                    <constraint firstAttribute="bottom" secondItem="N98-Hg-oBE" secondAttribute="bottom" id="uVO-iO-KnM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.039215686274509803" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addButton" destination="Kvy-5o-68d" id="zAL-kW-ZIl"/>
+                <outlet property="posterImageView" destination="N98-Hg-oBE" id="oCw-aw-QsM"/>
+                <outlet property="titleLabel" destination="Fmw-yO-g7G" id="ulh-Mf-b5l"/>
+            </connections>
+            <point key="canvasLocation" x="215.5" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Add" width="48" height="48"/>
+    </resources>
+</document>
